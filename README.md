@@ -37,3 +37,14 @@ $$
 P(y = 1) = \frac{1}{1 + e^{-x}}
 $$
 
+## Yapay Sinir Ağı (ANN) Yapısı ve Hiperparametreler
+## Ağ Mimarisi
+- **Input layer:** Özellik sayısı kadar nöron  
+- **Hidden layers:** 16 → 8 nöron, **ReLU** aktivasyon  
+- **Output layer:** 1 nöron, **Sigmoid** aktivasyon  
+## Hiperparametreler
+- **Optimizer:** Adam  
+- **Loss:** Binary Crossentropy  
+- **Epoch:** 100  
+- **Batch Size:** 16  
+- **Validation Split:** 0.2
