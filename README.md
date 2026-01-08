@@ -67,3 +67,9 @@ Nonlinear ilişkileri yakalayabilir ve özellikler arası karmaşık etkileşiml
 **ANN Test Accuracy:** 0.788 (yaklaşık)  
   Logistic Regression’a göre biraz daha düşük performans göstermiştir.
 
+## Logistic Regression Confusion Matrix Analizi
+
+| Gerçek \ Tahmin | Hayatta Kalmadı (0) | Hayatta Kaldı (1) |
+|-----------------|-------------------|------------------|
+| Hayatta Kalmadı (0) | 90                | 15               |
+| Hayatta Kaldı (1)   | 19                | 55               |
