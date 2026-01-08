@@ -8,3 +8,8 @@ Projem Titanic veri seti kullanılarak yolcuların hayatta kalıp kalmadığın�
 - Basit bir derin öğrenme (ANN) modeli geliştirmek.
 - Logistic Regression ile karşılaştırma yapmak. 
 - Eğitim grafikleri ve performans metriklerini yorumlamak.
+
+Proje Dosya Yapısı:
+    • Proje.py: Tüm kodların bulunduğu ana Python dosyası.
+    • README.md: Proje açıklaması.
+    • titanic.csv: Veri seti.
