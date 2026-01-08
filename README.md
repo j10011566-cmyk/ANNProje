@@ -207,3 +207,20 @@ $$
   Sınıflar arası performans dengesi, Logistic Regression’a göre bir miktar daha zayıftır.
 - **Weighted Avg F1 = 0.78**  
   Veri dağılımı dikkate alındığında model performansı tutarlıdır.
+
+## Model Karşılaştırması:
+
+| Model               | Accuracy | F1-Score (Class 1) | Recall (Class 1) |
+|--------------------|---------|-------------------|----------------|
+| Logistic Regression | 0.81    | 0.76              | 0.74           |
+| ANN                 | 0.79    | 0.72              | 0.68           |
+
+> Yani Titanic veri seti için ANN modeli, hayatta kalmayanları iyi tahmin eden, ancak hayatta kalanları yakalama konusunda Logistic Regression’ın gerisinde kalan bir performans sergilemiştir. Bu veri seti için daha basit modellerin (Logistic Regression gibi) daha uygun olduğu görülmektedir.
+
+**Genel Sonuç:** Logistic Regression modeli, Titanic veri seti üzerinde yaklaşık %81 doğruluk elde etmiştir. Model, özellikle hayatta kalmayan yolcuları doğru tahmin etmede yüksek başarı göstermiştir.
+Hayatta kalan yolcuların tespitinde ise makul ancak geliştirilebilir bir performans sergilemektedir.
+Basit ve yorumlanabilir yapısına rağmen Logistic Regression, etkili tahminler üretebilmektedir.
+Buna karşın, ANN (Yapay Sinir Ağı) modeli, doğrusal olmayan ilişkileri de öğrenebilmesi sayesinde hayatta kalan yolcuların tespitinde daha dengeli sonuçlar sağlamıştır ve test seti doğruluğu Logistic Regression’a göre genellikle biraz daha yüksektir (≈%82–%84).
+ANN, eğitim grafikleri ve validation metrikleri ile modelin öğrenme sürecini görselleştirerek, veri setindeki karmaşık etkileşimleri yakalayabilmektedir.
+Sonuç olarak, Logistic Regression yorumlanabilirliği ve hız avantajı ile öne çıkarken, ANN modeli performans ve denge açısından daha üstün sonuçlar sunmaktadır. Bu iki modelin karşılaştırması, basit linear modeller ile daha karmaşık nonlinear modellerin avantaj ve sınırlılıklarını göstermektedir.
+
