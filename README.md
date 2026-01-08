@@ -48,3 +48,15 @@ $$
 - **Epoch:** 100  
 - **Batch Size:** 16  
 - **Validation Split:** 0.2
+
+Nonlinear ilişkileri yakalayabilir ve özellikler arası karmaşık etkileşimleri öğrenebilir
+
+# Kullandığım Kütüphaneler ve Sürümleri
+
+- **matplotlib:** 3.10.8  
+- **numpy:** 2.4.0  
+- **pandas:** 2.3.3  
+- **scikit-learn:** 1.8.0  
+- **seaborn:** 0.13.2  
+- **tensorflow:** 2.20.0
+
