@@ -33,5 +33,7 @@ Logistic Regression da kullandım çünkü basit ve yorumlanabilir, ikili sını
 
 Model aşağıdaki sigmoid fonksiyonunu kullanır:
 
-P(y = 1) = 1 / (1 + e^-x)
+$$
+P(y = 1) = \frac{1}{1 + e^{-x}}
+$$
 
