@@ -25,3 +25,10 @@ Projem Titanic veri seti kullanılarak yolcuların hayatta kalıp kalmadığın�
 | Parch      | Ebeveyn / Çocuk sayısı                |
 | Fare       | Bilet ücreti                          |
 | Embarked   | Biniş limanı                          |
+
+## Kullanılan Model ve Model Mimarileri:
+**Logistic Regression:**
+
+Logistic Regression da kullandım çünkü basit ve yorumlanabilir, ikili sınıflandırma problemleri için idealdir ve küçük veri setlerinde etkilidir ve Yapay Sinir Ağı(ANN) ile karşılaştırmanın iyi olacağını düşündüm.
+Model aşağıdaki sigmoid fonksiyonunu kullanır:
+P(y=1) =  1 / (1 + e**-x)
