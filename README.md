@@ -1,6 +1,6 @@
 # SİNİR AĞLARİ FİNAL ÖDEVİ TESLİMİ - TITANIC SURVIVAL PREDICTION
 
-Projem Titanic veri seti kullanılarak yolcuların hayatta kalıp kalmadığını tahmin eden bir basit logistik regresyon modeli ve yapay sinir ağı (ANN) modeli içerir.
+> Projem Titanic veri seti kullanılarak yolcuların hayatta kalıp kalmadığını tahmin eden bir basit logistik regresyon modeli ve yapay sinir ağı (ANN) modeli içerir.
 
 ## Proje Amacı:
 - Titanic yolcularına ait demografik ve sosyo-ekonomik verileri analiz etmek.
@@ -29,7 +29,7 @@ Projem Titanic veri seti kullanılarak yolcuların hayatta kalıp kalmadığın�
 ## Kullanılan Model ve Model Mimarileri:
 **Logistic Regression:**
 
-Logistic Regression da kullandım çünkü basit ve yorumlanabilir, ikili sınıflandırma problemleri için idealdir ve küçük veri setlerinde etkilidir ve Yapay Sinir Ağı(ANN) ile karşılaştırmanın iyi olacağını düşündüm.
+> Logistic Regression da kullandım çünkü basit ve yorumlanabilir, ikili sınıflandırma problemleri için idealdir ve küçük veri setlerinde etkilidir ve Yapay Sinir Ağı(ANN) ile karşılaştırmanın iyi olacağını düşündüm.
 
 Model aşağıdaki sigmoid fonksiyonunu kullanır:
 
@@ -49,7 +49,7 @@ $$
 - **Batch Size:** 16  
 - **Validation Split:** 0.2
 
-Nonlinear ilişkileri yakalayabilir ve özellikler arası karmaşık etkileşimleri öğrenebilir
+> Nonlinear ilişkileri yakalayabilir ve özellikler arası karmaşık etkileşimleri öğrenebilir
 
 ## Kullandığım Kütüphaneler ve Sürümleri
 
@@ -73,3 +73,21 @@ Nonlinear ilişkileri yakalayabilir ve özellikler arası karmaşık etkileşiml
 |-----------------|-------------------|------------------|
 | Hayatta Kalmadı (0) | 90                | 15               |
 | Hayatta Kaldı (1)   | 19                | 55               |
+
+
+# Confusion Matrix Yorumları
+
+- **True Negative (TN = 90):**  
+  Hayatta kalmayan yolcuların büyük kısmı doğru tahmin edilmiştir.
+
+- **True Positive (TP = 55):**  
+  Hayatta kalan yolcuların önemli bir bölümü doğru tespit edilmiştir.
+
+- **False Positive (FP = 15):**  
+  Hayatta kalmadığı halde hayatta kaldı diye tahmin edilen yolcular.
+
+- **False Negative (FN = 19):**  
+  Hayatta kaldığı halde hayatta kalmadı diye tahmin edilen yolcular.  
+
+> Model, hayatta kalanları kaçırma (False Negative) konusunda biraz daha zayıftır.  
+> Gerçek hayatta bu durum, kurtarılabilecek kişilerin gözden kaçması anlamına gelir.
