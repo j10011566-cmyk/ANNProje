@@ -75,7 +75,7 @@ $$
 | Hayatta Kaldı (1)   | 19                | 55               |
 
 
-# Confusion Matrix Yorumları
+## Confusion Matrix Yorumları
 
 - **True Negative (TN = 90):**  
   Hayatta kalmayan yolcuların büyük kısmı doğru tahmin edilmiştir.
@@ -90,4 +90,120 @@ $$
   Hayatta kaldığı halde hayatta kalmadı diye tahmin edilen yolcular.  
 
 > Model, hayatta kalanları kaçırma (False Negative) konusunda biraz daha zayıftır.  
-> Gerçek hayatta bu durum, kurtarılabilecek kişilerin gözden kaçması anlamına gelir.
+> Gerçek hayatta bu durum, kurtarılabilecek kişilerin gözden kaçması anlamına gelir.7
+
+## Logistic Regression Classification Report:
+
+| Sınıf       | Precision | Recall | F1-Score | Support |
+|------------|-----------|--------|----------|---------|
+| 0          | 0.83      | 0.86   | 0.84     | 105     |
+| 1          | 0.79      | 0.74   | 0.76     | 74      |
+| **Accuracy**    | —         | —      | 0.81     | 179     |
+| **Macro Avg**   | 0.81      | 0.80   | 0.80     | 179     |
+| **Weighted Avg**| 0.81      | 0.81   | 0.81     | 179     |
+
+## Genel Model Performansı
+
+- **Accuracy = 81%**  
+  Model, yolcuların hayatta kalıp kalmadığını genel olarak başarılı bir şekilde tahmin etmektedir.  
+  Titanic gibi görece küçük ve dengesiz olmayan bir veri seti için bu oran makul ve kabul edilebilir bir performanstır.
+
+## Sınıf 0 (Hayatta Kalmayanlar)
+
+- **Precision: 0.83**  
+  Model “hayatta kalmadı” dediği yolcuların %83’ünde doğru tahmin yapmıştır.
+- **Recall: 0.86**  
+  Gerçekte hayatta kalmayan yolcuların %86’sını doğru şekilde yakalayabilmiştir.
+
+> Model, hayatta kalmayan yolcuları tanıma konusunda daha güçlüdür.
+
+## Sınıf 1 (Hayatta Kalanlar)
+
+- **Precision: 0.79**  
+  Modelin hayatta kaldığını tahmin ettiği yolcuların %79’u gerçekten hayatta kalmıştır.
+- **Recall: 0.74**  
+  Gerçekte hayatta kalan yolcuların %74’ü doğru tahmin edilmiştir.
+
+> Model, hayatta kalan bazı yolcuları kaçırmaktadır (false negative oranı görece yüksek).
+
+## Macro & Weighted Average
+
+- **Macro Avg F1 = 0.80**  
+  Sınıflar arası performans dengeli, ancak sınıf 1 (hayatta kalanlar) biraz daha zayıf.
+- **Weighted Avg F1 = 0.81**  
+  Sınıf dağılımı göz önüne alındığında modelin genel başarısı tutarlıdır.
+
+## ANN Sınıflandırma Raporu
+
+| Sınıf       | Precision | Recall | F1-Score | Support |
+|------------|-----------|--------|----------|---------|
+| 0          | 0.79      | 0.87   | 0.83     | 105     |
+| 1          | 0.78      | 0.68   | 0.72     | 74      |
+| **Accuracy**    | —         | —      | 0.79     | 179     |
+| **Macro Avg**   | 0.79      | 0.77   | 0.78     | 179     |
+| **Weighted Avg**| 0.79      | 0.79   | 0.78     | 179     |
+
+# Genel Model Performansı (ANN)
+
+- **Accuracy = 79%**  
+  ANN modeli, yolcuların hayatta kalma durumunu tahmin etmede orta–iyi düzeyde bir performans göstermektedir.  
+  Logistic Regression’a kıyasla biraz daha düşük bir genel doğruluk elde edilmiştir.
+
+## Sınıf Bazlı Değerlendirme
+
+### Sınıf 0 (Hayatta Kalmayanlar)
+
+- **Precision: 0.79**  
+  Modelin “hayatta kalmadı” dediği yolcuların %79’u gerçekten hayatta kalmamıştır.
+- **Recall: 0.87**  
+  Gerçekte hayatta kalmayan yolcuların %87’si doğru şekilde tespit edilmiştir.
+
+> **Yorum:** ANN modeli, hayatta kalmayan yolcuları ayırt etmede oldukça başarılıdır.
+
+### Sınıf 1 (Hayatta Kalanlar)
+
+- **Precision: 0.78**  
+  Modelin hayatta kaldığını tahmin ettiği yolcuların %78’i gerçekten hayatta kalmıştır.
+- **Recall: 0.68**  
+  Gerçekte hayatta kalan yolcuların yalnızca %68’i yakalanabilmiştir.
+
+> **Yorum:** Model, hayatta kalan yolcuların önemli bir kısmını kaçırmaktadır (false negative oranı yüksek).
+
+## Macro & Weighted Average
+
+- **Macro Avg F1 = 0.78**  
+  Sınıflar arası performans dengesi, Logistic Regression’a göre bir miktar daha zayıftır.
+- **Weighted Avg F1 = 0.78**  
+  Veri dağılımı dikkate alındığında model performansı tutarlıdır.
+## # Genel Model Performansı (ANN)
+
+- **Accuracy = 79%**  
+  ANN modeli, yolcuların hayatta kalma durumunu tahmin etmede orta–iyi düzeyde bir performans göstermektedir.  
+  Logistic Regression’a kıyasla biraz daha düşük bir genel doğruluk elde edilmiştir.
+
+## Sınıf Bazlı Değerlendirme
+
+### Sınıf 0 (Hayatta Kalmayanlar)
+
+- **Precision: 0.79**  
+  Modelin “hayatta kalmadı” dediği yolcuların %79’u gerçekten hayatta kalmamıştır.
+- **Recall: 0.87**  
+  Gerçekte hayatta kalmayan yolcuların %87’si doğru şekilde tespit edilmiştir.
+
+> **Yorum:** ANN modeli, hayatta kalmayan yolcuları ayırt etmede oldukça başarılıdır.
+
+### Sınıf 1 (Hayatta Kalanlar)
+
+- **Precision: 0.78**  
+  Modelin hayatta kaldığını tahmin ettiği yolcuların %78’i gerçekten hayatta kalmıştır.
+- **Recall: 0.68**  
+  Gerçekte hayatta kalan yolcuların yalnızca %68’i yakalanabilmiştir.
+
+> **Yorum:** Model, hayatta kalan yolcuların önemli bir kısmını kaçırmaktadır (false negative oranı yüksek).
+
+## Macro & Weighted Average
+
+- **Macro Avg F1 = 0.78**  
+  Sınıflar arası performans dengesi, Logistic Regression’a göre bir miktar daha zayıftır.
+- **Weighted Avg F1 = 0.78**  
+  Veri dağılımı dikkate alındığında model performansı tutarlıdır.
