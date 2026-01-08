@@ -69,6 +69,8 @@ $$
 
 
 ![Titanic Confusion Matrix](ModelKarsılastırmasıTestAccuracy.png)
+![Titanic Confusion Matrix](LogCMvsANNCM.png)
+![Titanic Confusion Matrix](AANLossAccuracy.png)
 
 
 ## Logistic Regression Confusion Matrix Analizi
