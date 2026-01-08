@@ -51,7 +51,7 @@ $$
 
 Nonlinear ilişkileri yakalayabilir ve özellikler arası karmaşık etkileşimleri öğrenebilir
 
-# Kullandığım Kütüphaneler ve Sürümleri
+## Kullandığım Kütüphaneler ve Sürümleri
 
 - **matplotlib:** 3.10.8  
 - **numpy:** 2.4.0  
@@ -59,4 +59,11 @@ Nonlinear ilişkileri yakalayabilir ve özellikler arası karmaşık etkileşiml
 - **scikit-learn:** 1.8.0  
 - **seaborn:** 0.13.2  
 - **tensorflow:** 2.20.0
+
+## Sonuçlar ve Yorumum
+**Logistic Regression Test Accuracy:** 0.81  
+  Bu sonuç, modelin test verisinin %81'ini doğru sınıflandırdığını gösterir. Titanic veri seti için oldukça başarılı bir sonuç.
+
+**ANN Test Accuracy:** 0.788 (yaklaşık)  
+  Logistic Regression’a göre biraz daha düşük performans göstermiştir.
 
