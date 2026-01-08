@@ -9,7 +9,19 @@ Projem Titanic veri seti kullanılarak yolcuların hayatta kalıp kalmadığın�
 - Logistic Regression ile karşılaştırma yapmak. 
 - Eğitim grafikleri ve performans metriklerini yorumlamak.
 
-Proje Dosya Yapısı:
-    • Proje.py: Tüm kodların bulunduğu ana Python dosyası.
-    • README.md: Proje açıklaması.
-    • titanic.csv: Veri seti.
+## Proje Dosya Yapısı:
+- Proje.py: Tüm kodların bulunduğu ana Python dosyası.
+- README.md: Proje açıklaması.
+- titanic.csv: Veri seti.
+## Kullanılan Değişkenler:
+
+| Değişken   | Açıklama                              |
+|------------|--------------------------------------|
+| Survived   | Hayatta kalma durumu (0 = Hayır, 1 = Evet) |
+| Pclass     | Yolcu sınıfı                          |
+| Sex        | Cinsiyet                              |
+| Age        | Yaş                                   |
+| SibSp      | Kardeş / Eş sayısı                    |
+| Parch      | Ebeveyn / Çocuk sayısı                |
+| Fare       | Bilet ücreti                          |
+| Embarked   | Biniş limanı                          |
