@@ -67,6 +67,10 @@ $$
 **ANN Test Accuracy:** 0.788 (yaklaşık)  
   Logistic Regression’a göre biraz daha düşük performans göstermiştir.
 
+
+![Titanic Confusion Matrix](ModelKarsılastırmasıTestAccuracy.png)
+
+
 ## Logistic Regression Confusion Matrix Analizi
 
 | Gerçek \ Tahmin | Hayatta Kalmadı (0) | Hayatta Kaldı (1) |
